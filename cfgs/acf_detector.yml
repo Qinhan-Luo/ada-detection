@@ -1,0 +1,17 @@
+output_root: 'outputs'
+output_version: 'baseline'
+backup_name: 'weights'
+log_name: 'logs'
+
+data_root_dir: 'D:\DataSets\adaWaters'
+features: { Color:{enabled: True, color_space: 'hsv'}, Gabor:{enabled: True, num_filter: 8}, GradientMag:{
+enabled: True, color_chn: 0}, GradientHist:{enabled: False, num_orients: 6}, Cnn:{enabled: False} }
+scales: [2, 4, 6, 8, 10]
+
+train:
+  dataset: 'train'
+  stdout: False
+
+test:
+  dataset: 'test'
+  stdout: True

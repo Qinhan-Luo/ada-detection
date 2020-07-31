@@ -1,0 +1,3 @@
+cfg_dict:
+  acf: acf_detector.yml
+  sql: postgis_sql.yml
